@@ -5,11 +5,11 @@ import cors from 'cors';
 
 import { Request, Response, NextFunction } from 'express';
 
-
-import uploadConfig from './config/uploadConfig';
+import uploadConfig from '@config/uploadConfig';
+import AppError from '@shared/errors/AppError';
 import routes from './routes';
-import './database';
-import AppError from './errors/AppError';
+import '@shared/infra/typeorm';
+import '@shared/container';
 
 const app = express();
 app.use(express.json());
