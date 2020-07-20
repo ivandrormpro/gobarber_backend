@@ -29,7 +29,7 @@ describe('UpdateUserAvatar', () => {
         const fakeUsersRepository = new FakeUsersRepository();
         const updateUserAvatar = new UpdateUserAvatarService(fakeUsersRepository, fakeStorageProvider);
 
-        expect(updateUserAvatar.execute({
+        await expect(updateUserAvatar.execute({
             user_id: 'user-inexistente',
             avatarFilename: 'avatar.jpg'
         })).rejects.toBeInstanceOf(AppError);
