@@ -1,6 +1,3 @@
-// A criacao do repositorio deveu-se a necessidade de termos
-// um metodo que pesquise por data
-
 import { getRepository, Repository } from 'typeorm';
 
 import IUsersRepository from '@modules/users/repositories/IUsersRepository';

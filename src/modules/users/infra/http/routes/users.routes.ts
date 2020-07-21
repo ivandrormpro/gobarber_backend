@@ -1,9 +1,7 @@
-import { Router, request, response} from 'express';
+import { Router } from 'express';
 import multer from 'multer';
-import { container } from 'tsyringe';
 
 import ensureAuthenticated from '@modules/users/infra/http/middleware/ensureAuthenticated';
-import UpdateUserAvatarService from '@modules/users/services/UpdateUserAvatarService';
 import uploadConfig from '@config/uploadConfig';
 
 import UsersController from '@modules/users/infra/http/controllers/UsersController';

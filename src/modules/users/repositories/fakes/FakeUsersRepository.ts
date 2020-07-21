@@ -1,9 +1,7 @@
 import { uuid } from 'uuidv4';
-import { isEqual } from 'date-fns';
 import IUsersRepository from '@modules/users/repositories/IUsersRepository';
 import ICreateUserDTO from '@modules/users/dtos/ICreateUserDTO';
 import User from '@modules/users/infra/typeorm/entities/User';
-import { id } from 'date-fns/locale';
 
 class FakeUsersRepository implements IUsersRepository {
 
